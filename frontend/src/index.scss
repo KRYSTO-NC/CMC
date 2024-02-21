@@ -1,0 +1,136 @@
+@import './SASS/reset';
+@import './SASS/variables';
+@import './SASS/mixins';
+@import './SASS/animations';
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+// .container {
+//   min-height: 100vh;
+// }
+.page-container {
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1440px;
+  align-items: center;
+}
+
+// ======================================= FORM =======================================
+.form {
+  width: 70%;
+  margin: 5rem auto;
+  max-width: 50rem;
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      text-align: left;
+      display: block;
+      margin: 0 0 5px 3px;
+      color: $primary-dark;
+      font-weight: 600;
+      span {
+        color: $danger;
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #e6e6e6;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
+
+      &:focus {
+        outline: none;
+        border: 2px solid $primary-dark;
+      }
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  label {
+    flex: 10;
+  }
+  input {
+    flex: 1;
+  }
+}
+
+// ======================================= LINK =======================================
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+// ======================================= BUTTON =======================================
+.btn {
+  @include button;
+}
+.btn-block {
+  @include button;
+  width: 100%;
+}
+.btn-reverse {
+  @include button;
+  background-color: $secondary;
+  color: $primary;
+  width: auto;
+  &:hover,
+  &:focus {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.btn-sm {
+  @include button;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+// ======================================= HEADING =======================================
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: $primary;
+    font-size: 2rem;
+  }
+}
+@include bigPhone-and-lower {
+  .heading {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}

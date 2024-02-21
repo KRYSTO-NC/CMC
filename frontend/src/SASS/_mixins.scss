@@ -1,0 +1,76 @@
+
+
+// ===================== flexbox =====================
+@mixin flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+// ===================== Grid =====================
+
+@mixin grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// ===================== BUTTON =====================
+
+/* CSS */
+@mixin button {
+  background-color: $primary;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+    color: $primary-dark;
+  }
+}
+// ===================== responsive =====================
+
+@mixin bigPhone-and-lower {
+    @media screen and (max-width: $bigPhone) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-and-higher {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  @mixin desktop-and-higher {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+  
+

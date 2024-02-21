@@ -1,0 +1,53 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/mixins';
+@import '../../../SASS/animations';
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem; 
+    margin-top: 3rem;
+}
+
+input {
+    flex-grow: 1; /* Utilisez flex-grow pour remplir l'espace disponible */
+    width: 100%;
+    max-width: 60rem;
+    height: 100%;
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: $radius 0 0 $radius;
+
+    &:focus {
+        outline: none;
+       
+    }
+}
+
+.btn-search {
+    height: 100%;
+    border-radius: 0 $radius $radius 0;
+    border: none;
+    background-color: $secondary;
+    padding: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        svg {
+            color: $primary;
+        }
+        background-color: $secondary;
+    }
+
+    svg {
+        font-size: 2rem;
+        color: $white;
+    }
+}

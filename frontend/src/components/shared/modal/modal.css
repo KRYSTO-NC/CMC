@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* CSS */
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.overlay {
+  background-color: rgba(217, 217, 217, 0.5450980392);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 3rem;
+  min-width: 32rem;
+}
+.modal h4 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.modal p {
+  color: black;
+}
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #bf3636;
+}
+.modal .btn-close:hover {
+  transform: scale(1.2);
+}
+
+.btn-message {
+  background-color: #bf3636;
+  width: 40%;
+  margin: 0 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+.btn-message:hover {
+  scale: 0.98;
+  background-color: rgb(204, 14, 14);
+}/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,13 @@
+@import "../../SASS/reset.scss";
+@import "../../SASS/variables.scss";
+@import "../../SASS/mixins.scss";
+@import "../../SASS/animations.scss";
+
+.card-container {
+    // min-height: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
