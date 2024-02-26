@@ -61,13 +61,6 @@ export const usersApiSlice = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ['User'],
     }),
-    addToFavorites: builder.mutation({
-      query: (data) => ({
-        url: `${USERS_URL}/addtofavorites`,
-        method: 'POST',
-        body: data,
-      }),
-    }),
   }),
 })
 
@@ -80,5 +73,4 @@ export const {
   useDeleteUsersMutation,
   useGetUserDetailsQuery,
   useUpdateUserMutation,
-  addToFavorites,
 } = usersApiSlice

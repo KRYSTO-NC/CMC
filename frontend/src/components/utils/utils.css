@@ -36,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -78,7 +77,7 @@ button {
 }
 .paginate-container a {
   margin: 0 0.5rem;
-  background-color: #3671BF;
+  background-color: #005C53;
   color: #F2F2F2;
   height: 2rem;
   width: 2rem;

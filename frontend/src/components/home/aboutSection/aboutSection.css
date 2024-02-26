@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in RGBA */
+/* CSS */
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.titre-section-info {
+  color: #434343;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+.section-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carte-info {
+  width: 35rem;
+  height: 50rem;
+  margin: 0 2rem 8rem;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  border-radius: 20px;
+}
+.carte-info img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte-info h2 {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #005C53;
+}
+
+.carte-info p {
+  font-size: 1.3rem;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  color: #434343;
+}/*# sourceMappingURL=aboutSection.css.map */

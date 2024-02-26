@@ -82,12 +82,12 @@ function fileFilter(req, file, cb) {
 }
 
 const upload = multer({ storage, fileFilter })
-const uploadMultipleImages = upload.array('images', 5) // 'images' correspond au champ du formulaire pour les fichiers
+const uploadMultipleImages = upload.array('images', 10)
 
 router.post('/', (req, res) => {
   uploadMultipleImages(req, res, function (err) {
     if (err) {
-      res.status(400).send({ message: err.message })
+      return res.status(400).send({ message: err.message })
     }
 
     // Array contenant les chemins des fichiers téléchargés

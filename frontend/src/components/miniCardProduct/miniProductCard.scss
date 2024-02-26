@@ -1,0 +1,104 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/mixins';
+@import '../../SASS/animations';
+
+.mini-product-card {
+  width: 30rem;
+  position: relative;
+  box-shadow: 0 2px 7px #b9b9b9;
+  margin: 1rem 2rem;
+  height: 38rem;
+  border-radius: 30px;
+
+  .actions {
+    border-radius: $radius 0 0 0;
+    a {
+      color: $warning;
+      text-decoration: none;
+      font-size: 2rem;
+     
+      
+      &:hover {
+          scale: 1.2;
+        }
+    }
+    
+    button {
+        color: $danger;
+        font-size: 1.8rem;
+      
+        
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $primary;
+  color: $white;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: $radius 0 0 0;
+  z-index: 150;
+}
+
+.mini-product-thumb {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  align-items: center;
+  height: 25rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    // border-radius: 30px  30px  0  0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.product-details {
+  padding: 1rem;
+  overflow: hidden;
+  max-height: 20rem;
+  h4 {
+    a {
+      color: $primary;
+      display: block;
+      font-weight: 500;
+      margin-bottom: 1.8rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Ajoutez cette ligne pour les trois petits points */
+      white-space: nowrap; /* Ajoutez cette ligne pour empêcher le texte de se replier à la ligne */
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.mini-out-of-stock {
+  position: absolute;
+  background-color: $danger;
+  padding: 0.6rem 1rem;
+  z-index: 100;
+  color: white;
+}

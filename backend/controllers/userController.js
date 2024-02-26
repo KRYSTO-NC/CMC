@@ -139,7 +139,7 @@ const getUsers = asyncHandler(async (req, res) => {
 // @route GET /api/users/:id
 // @access Private/Admin
 const getUserById = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.params.id).populate('favoriteProducts')
+  const user = await User.findById(req.params.id)
   if (user) {
     res.status(200).json(user)
   } else {
@@ -306,30 +306,6 @@ const sendTokenResponse = (user, statusCode, res) => {
   })
 }
 
-// @desc Add product to user's favorites
-// @route POST /api/users/addtofavorites
-// @access Private
-const addToFavorites = asyncHandler(async (req, res) => {
-  const { userId, productId } = req.body
-
-  try {
-    const user = await User.findById(userId)
-    if (!user) {
-      return res.status(404).json({ error: 'Utilisateur non trouvé' })
-    }
-
-    if (!user.favoriteProducts.includes(productId)) {
-      user.favoriteProducts.push(productId)
-      await user.save()
-      res.status(201).json(user.favoriteProducts)
-    } else {
-      res.status(400).json({ error: 'Produit déjà ajouté aux favoris' })
-    }
-  } catch (error) {
-    res.status(500).json({ error: 'Internal Server Error' })
-  }
-})
-
 export {
   authUser,
   registerUser,
@@ -343,5 +319,4 @@ export {
   updatePassword,
   forgotPassword,
   resetPassword,
-  addToFavorites,
 }

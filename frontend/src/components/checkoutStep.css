@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in RGBA */
+.checkout-steps {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.checkout-steps .step {
+  margin: 0 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+.checkout-steps .step a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.checkout-steps .step.active {
+  background-color: #DBF227;
+  color: #fff;
+}
+.checkout-steps .step.disabled {
+  cursor: not-allowed;
+  color: #6c757d;
+}/*# sourceMappingURL=checkoutStep.css.map */

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in RGBA */
+/* CSS */
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.container-header-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+
+.product_cover {
+  width: 100%;
+}
+
+.product_infos {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem;
+}
+.product_infos h2 {
+  font-size: 6rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: rgb(76, 76, 76);
+}
+.product_infos p {
+  font-size: 1.3rem;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  color: rgb(35, 35, 35);
+}
+.product_infos button {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  background-color: #DBF227;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.product_infos button:hover {
+  background-color: #005C53;
+}
+
+.product-general {
+  width: 70%;
+}/*# sourceMappingURL=productheaderCover.css.map */

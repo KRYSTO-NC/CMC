@@ -8,6 +8,7 @@
   position: relative;
   box-shadow: 0 2px 7px #b9b9b9;
   margin: 1rem 2rem;
+  height: 55rem;
   border-radius: 30px;
 }
 
@@ -130,7 +131,7 @@
   left: 0;
   right: 0;
     bottom: 0;
-  background-color: rgba(9, 9, 9, 0.816);
+  background-color: rgba(9, 9, 9, 0.752);
   color: $danger;
   font-weight: bolder;
     font-size: 3rem;
@@ -140,6 +141,7 @@
   text-align: center;
   padding-top: 80%;
   z-index: 1000;
+  border-radius: 20px;
 }
 .product-price {
   font-size: 1.8rem;
@@ -180,6 +182,9 @@
     input {
       border-radius: 20px;
       width: 300px;
+      height: 2rem;
+      padding: 2rem;
+      border: #b9b9b9;
     }
   }
   .search-bar {

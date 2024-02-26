@@ -1,0 +1,130 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/mixins';
+@import '../../SASS/animations';
+
+.empty {
+  text-align: center;
+
+  font-size: 2.5rem;
+  color: $danger;
+
+  width: 30rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.cart-item {
+  background-color: #fff;
+  display: flex;
+  border-radius: 20px;
+  margin: 5rem 0;
+  height: 20rem;
+  box-shadow: $shadow;
+  .cart-image {
+    width: 30%;
+    margin-right: 1rem;
+    img {
+      border: 5px solid $secondary;
+      border-radius: 20px 0px 0px 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.cart-details {
+  padding: 1rem;
+  .productName {
+    font-size: 1.6rem;
+    color: $primary;
+    margin-bottom: 2rem;
+  }
+  p {
+    span {
+      font-size: 1.7rem;
+      color: $primary-dark;
+      font-weight: bolder;
+    }
+  }
+}
+
+.cart-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35rem;
+    border: 1px solid $primary;
+    border-radius: $radius;
+
+    margin-top: 2rem;
+  select {
+    padding: 1rem;
+    margin: 0 1rem;
+    border: 1px solid $primary;
+    border-radius: $radius;
+    width: 20%;
+  }
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.6rem;
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
+.cart-summary {
+ margin-left: 2rem;
+ margin-top: 5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 20rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 2rem;
+    color: $primary;
+    margin-bottom: 2rem;
+  }
+  p{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: $primary-dark;
+    text-align: center;
+  
+  }
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.remove-button {
+  background-color: $danger;
+
+  padding: 1rem;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $danger;
+  }
+}
+
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ 
+}

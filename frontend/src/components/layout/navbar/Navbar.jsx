@@ -78,7 +78,7 @@ const Navbar = () => {
                 <NavLink to="/order" label="Mes commandes" />
               </li>
               <li>
-                <NavLink to="/order" label="Ma liste de produits" />
+                <NavLink to="/favorite-products" label="Ma liste de produits" />
               </li>
               {userInfo.isAdmin && (
                 <li>
@@ -187,13 +187,13 @@ const Navbar = () => {
               </li>
               <div className="action-container">
                 <li>
-                  <Link to="/login" label="Connexion" className="btn">
+                  <Link to="/login" label="Connexion" className="btn action-btn">
                     {' '}
                     <FaUser /> Connexion{' '}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/register" label="S'inscrire" className="btn">
+                  <Link to="/register" label="S'inscrire" className="btn action-btn">
                     {' '}
                     S'enregistrer{' '}
                   </Link>

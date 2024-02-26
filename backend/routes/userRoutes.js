@@ -6,7 +6,6 @@ import {
   logoutUser,
   getUserProfile,
   updateUserProfile,
-  addToFavorites, // Import the new function
   getUsers,
   getUserById,
   deleteUser,
@@ -25,10 +24,7 @@ router
 router
   .route('/:id')
   .delete(protect, admin, deleteUser)
-  .get(protect, admin, getUserById)
+  .get(protect, getUserById)
   .put(protect, admin, updateUser)
-
-// Add the route for addToFavorites
-router.route('/addtofavorites').post(addToFavorites)
 
 export default router

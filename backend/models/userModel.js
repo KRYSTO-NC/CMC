@@ -12,10 +12,6 @@ const userSchema = new mongoose.Schema(
     isProfessional: { type: Boolean, default: false },
     billingAddress: { type: String },
     ridet: { type: String },
-
-    favoriteProducts: [
-      { type: mongoose.Schema.Types.ObjectId, ref: 'Product' },
-    ],
   },
   { timestamps: true },
 )

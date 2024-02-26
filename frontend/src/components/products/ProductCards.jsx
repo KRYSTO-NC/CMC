@@ -1,47 +1,72 @@
-import { Link, useNavigate } from 'react-router-dom'
-import './productCard.css'
-import { FaEye, FaHeart, FaShoppingCart } from 'react-icons/fa'
-import { addToCart } from '../../slices/cartSlice'
-
-import { useDispatch } from 'react-redux'
-import { useState } from 'react'
-import { toast } from 'react-toastify'
+import { Link, useNavigate } from 'react-router-dom';
+import './productCard.css';
+import { FaEye, FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { addToCart } from '../../slices/cartSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import {
+  useCreateFavoriteProductMutation,
+  useGetFavoriteProductsQuery,
+  useUpdateFavoriteProductMutation,
+} from '../../slices/favoriteProductsSlice.js';
 
 const ProductCards = ({ product }) => {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [qty, setQty] = useState(1);
+  const { userInfo } = useSelector((state) => state.auth);
+ 
+  console.log(userInfo);
+  const [createFavoriteProductMutation] = useCreateFavoriteProductMutation();
 
-  const [qty, setQty] = useState(1)
+  const updatedFavoriteProductMutation = useUpdateFavoriteProductMutation();
+  const { data: userFavoriteProducts, refetch: refetchFavoriteProducts } = useGetFavoriteProductsQuery();
 
-
+  const isProductInFavorites = (userFavoriteProducts || []).some((favProduct) => favProduct._id === product._id);
+    console.log(product);
+ 
+    const handleAddToFavorites = async () => {
+      try {
+        if (!userInfo) {
+          // Gérez le cas où l'utilisateur n'est pas connecté
+          navigate('/login');
+          return;
+        }
+  
+          // Le produit n'est pas dans les favoris, donc ajoutez-le à la liste des favoris
+   await createFavoriteProductMutation({ userId: userInfo._id, products: product._id });
+        
+       
+        // Mettez à jour les favoris en refetchant les données avec useGetFavoriteProductsQuery
+        refetchFavoriteProducts();
+        toast.success('Produit ajouté aux favoris avec succès');
+      } catch (error) {
+        console.error("Erreur lors de l'ajout du produit aux favoris :", error);
+        toast.error("Erreur lors de l'ajout du produit aux favoris");
+      }
+    };
   const addToCartHandler = () => {
     if (qty <= product.countInStock) {
       dispatch(addToCart({ ...product, qty }));
       toast.success('Produit ajouté au panier');
-    } else if (product.countInStock === 0){
+    } else if (product.countInStock === 0) {
       toast.error('Ce produit est en rupture de stock');
-    }
-    else {
+    } else {
       toast.error('Quantité non disponible');
     }
- 
   };
-  console.log('====================================');
-  console.log(product);
-  console.log('====================================');
 
-  const formattedPrice = product.price.toLocaleString('fr-FR') // Utilisez la locale française pour le formatage des nombres
+  const formattedPrice = product.price.toLocaleString('fr-FR');
+
   return (
     <div className="product-card">
       <div className="badge">{product.category.name}</div>
-         {/* Si le produit est en rupture de stock, affichez un badge "en rupture de stock" */}
-         {product.countInStock === 0 && <div className="out-of-stock">En rupture de stock</div>}
+      {product.countInStock === 0 && <div className="out-of-stock">En rupture de stock</div>}
       <div className="product-thumb">
-      <Link to={`/product/${product._id}`}>
-  {product.images && product.images.length > 0 && (
-    <img src={product.images[0]} alt={product.name} />
-  )}
-</Link>
+        <Link to={`/product/${product._id}`}>
+          {product.images && product.images.length > 0 && <img src={product.images[0]} alt={product.name} />}
+        </Link>
       </div>
       <div className="product-details">
         <span className="product-category">{product.subCategory.name}</span>
@@ -62,13 +87,13 @@ const ProductCards = ({ product }) => {
           <button onClick={addToCartHandler}>
             <FaShoppingCart />
           </button>
-          <button to={`/product/${product._id}`}>
+          <button onClick={handleAddToFavorites}>
             <FaHeart />
           </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductCards
+export default ProductCards;

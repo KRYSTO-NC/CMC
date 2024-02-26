@@ -3,61 +3,61 @@
 @import '../../../SASS/mixins';
 @import '../../../SASS/animations';
 
+.overlay {
+  background-color: #25252568;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-.overlay{
-    background-color: #d9d9d98b;
-    position: fixed;
+.modal {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 3rem;
+  min-width: 32rem;
+
+  animation: flip-in-hor-top 1.2s ease-out;
+  h4 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: black;
+  }
+
+  .btn-close {
+    position: absolute;
     top: 0;
-    bottom: 0;
     right: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: $danger;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
+.btn-message {
+  background-color: $danger;
+  width: 100%;
 
-
-.modal{
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 15px;
-    position: relative;
-    margin-bottom: 3rem;
-    min-width: 32rem;
-    h4{
-        color: black;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    p{
-        color: black;
-    }
-
-    .btn-close{
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 1rem;
-        cursor: pointer;
-        transition: all 0.3s;
-        color: $danger;
-        &:hover{
-            transform: scale(1.2);
-        }
-    }
-}
-
-.btn-message{
-   background-color: $danger;
-   width: 40%;
-   margin: 0 1rem ;
-   border-radius: 10px;
-   padding: 0.5rem;
+  border-radius: 10px;
+  padding: 0.5rem;
   margin-top: 2rem;
-   &:hover{
-      scale: 0.98;
-      background-color: rgb(204, 14, 14);
-   }
+  &:hover {
+    scale: 0.98;
+    background-color: rgb(204, 14, 14);
+  }
 }

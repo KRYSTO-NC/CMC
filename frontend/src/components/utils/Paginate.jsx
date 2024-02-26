@@ -17,7 +17,7 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
                 ? keyword
                   ? `/search/${keyword}/page/${i}`
                   : `/page/${i}`
-                : `/admin/productlist/${i}`
+                : `/admin/page/${i}`
             }
             className={i === page ? 'active' : ''}
           >
@@ -36,7 +36,7 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
                 ? keyword
                   ? `/search/${keyword}/page/${i}`
                   : `/page/${i}`
-                : `/admin/productlist/${i}`
+                : `/admin/page/${i}`
             }
             className={i === page ? 'active' : ''}
           >
@@ -54,7 +54,7 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
                 ? keyword
                   ? `/search/${keyword}/page/${i}`
                   : `/page/${i}`
-                : `/admin/productlist/${i}`
+                : `/admin/page/${i}`
             }
             className={i === page ? 'active' : ''}
           >
@@ -83,7 +83,7 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
               ? keyword
               ? `/search/${keyword}/page/1`
               : '/page/1'
-              : '/admin/productlist/1'
+              : '/admin/products/1'
             }
             className={page === 1 ? 'disabled' : ''}
             >
@@ -100,7 +100,7 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
               ? keyword
               ? `/search/${keyword}/page/${pages}`
               : `/page/${pages}`
-              : `/admin/productlist/${pages}`
+              : `/admin/page/${pages}`
             }
             className={page === pages ? 'disabled' : ''}
             >
@@ -117,3 +117,4 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
 }
 
 export default Paginate
+

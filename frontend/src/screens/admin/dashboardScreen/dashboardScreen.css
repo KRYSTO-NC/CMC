@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* styles.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Utilisez la hauteur de la vue pour occuper toute la hauteur de l'écran */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4; /* Couleur de fond du contenu principal */
+}
+
+.btns a {
+  margin: 1rem 0;
+}
+
+/* Ajoutez des styles supplémentaires en fonction de vos besoins *//*# sourceMappingURL=dashboardScreen.css.map */

@@ -1,0 +1,121 @@
+@import '../../SASS/reset.scss';
+@import '../../SASS/variables.scss';
+@import '../../SASS/mixins.scss';
+@import '../../SASS/animations.scss';
+
+.shipping-section{
+  display: flex;
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+
+justify-content: space-around;
+h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: $primary;
+}
+.payment-method-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $primary;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: $radius;
+  width: 30rem;
+p{
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+}
+
+.order-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid $primary;
+  border-radius: $radius;
+  background-color: #fff;
+  img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .item-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    h2{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $primary;
+    }
+    p{
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: $primary-dark;
+    }
+  }
+  .item-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $primary;
+    }
+    p{
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: $primary-dark;
+    }
+  }
+}
+
+
+.order-summary{
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 30rem;
+  padding: 3rem;
+  width: 68rem;
+  display: flex;
+  flex-direction: column;
+ div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    h5{
+      font-size: 2rem;
+      color: $primary;
+    }
+    p{
+      font-size: 1.6rem;
+      color: $primary-dark;
+      span{
+        font-weight: bolder;
+        font-size: 1rem;
+      }
+    }
+ }
+}
+
+
+.total-price{
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color:$secondary
+}
+

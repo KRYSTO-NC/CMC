@@ -36,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -86,7 +85,7 @@ input:focus {
   height: 100%;
   border-radius: 0 5px 5px 0;
   border: none;
-  background-color: #A9D943;
+  background-color: #DBF227;
   padding: 2rem;
   cursor: pointer;
   display: flex;
@@ -94,10 +93,10 @@ input:focus {
   align-items: center;
 }
 .btn-search:hover {
-  background-color: #A9D943;
+  background-color: #DBF227;
 }
 .btn-search:hover svg {
-  color: #3671BF;
+  color: #005C53;
 }
 .btn-search svg {
   font-size: 2rem;

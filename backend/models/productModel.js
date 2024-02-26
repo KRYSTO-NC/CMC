@@ -30,7 +30,6 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    subname: { type: String, required: true, default: 'Sample ' },
 
     category: {
       type: mongoose.Schema.Types.ObjectId,
@@ -47,6 +46,7 @@ const productSchema = new mongoose.Schema(
     numMail: {
       type: String,
       required: true,
+      unique: true,
     },
     images: [
       {

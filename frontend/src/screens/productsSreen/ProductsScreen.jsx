@@ -29,10 +29,10 @@ const ProductsScreen = () => {
   return (
     <div>
       <ProductsHeaderSearch />
-      {error && <Message><p>Une erreur est survenue</p></Message>}
+      {error && <Message messageTitle={"OUPS !"} messageTxt={"Une erreur est survenue merci de reesayer"} />}
       {showLoader && <Loader />}
       {!showLoader && data && (
-        <>
+        <div>
           <div className="heading">
             <h2>Résultat de votre recherche</h2>
             <p>{data.products.length} Produits trouvée(s)</p>
@@ -49,7 +49,7 @@ const ProductsScreen = () => {
             page={data.page ? data.page : 0}
             keyword={keyword || ''}
           />
-        </>
+        </div>
       )}
     </div>
   );

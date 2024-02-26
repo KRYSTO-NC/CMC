@@ -5,7 +5,7 @@ import Product from '../models/productModel.js'
 // @route GET /api/products
 // @access Public
 const getProducts = asyncHandler(async (req, res) => {
-  const pageSize = 8
+  const pageSize = 50
   const page = Number(req.query.pageNumber) || 1
 
   const keyword = req.query.keyword
@@ -56,7 +56,7 @@ const createProduct = asyncHandler(async (req, res) => {
     subname: 'Sample subname',
     price: 0,
     user: req.user._id,
-    image: '/images/sample.jpg',
+    images: ['/images/sample.jpg'],
     brand: 'Sample brand',
     category: '65cf60e4c6daa9f0968b7aac',
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -65,6 +65,7 @@ const createProduct = asyncHandler(async (req, res) => {
     countInStock: 0,
     numReviews: 0,
     description: 'Sample description',
+    keywords: ['sample'],
   })
 
   const createdProduct = await product.save()
@@ -80,14 +81,15 @@ const updateProduct = asyncHandler(async (req, res) => {
     subname,
     price,
     description,
-    image,
+    images,
     brand,
     category,
     subCategory,
     url,
     numMail,
     countInStock,
-    longDescription,
+
+    keywords,
     options,
   } = req.body
 
@@ -97,14 +99,15 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.subname = subname
     product.price = price
     product.description = description
-    product.image = image
+    product.images = images
     product.brand = brand
     product.category = category
     product.countInStock = countInStock
     product.url = url
     product.numMail = numMail
     product.subCategory = subCategory
-    product.longDescription = longDescription
+    product.keywords = keywords
+
     product.options = options
 
     const updatedProduct = await product.save()

@@ -1,0 +1,144 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/mixins';
+@import '../../SASS/animations';
+
+
+
+.faq-container {
+    max-width: 60rem;
+    margin: 0 auto;
+ 
+    .faq {
+        background-color: transparent;
+        border: 1px solid $primary;
+        border-radius: 10px;
+        margin: 2rem 0;
+        padding: 3rem;
+        position: relative;
+        overflow: hidden;
+
+        transition: all 0.3s ease-in-out;
+        text-align: left;
+    }
+}
+
+
+.faq.active {
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    &:before,
+    &:after {
+        content: '\f075';
+        font-family: 'Font Awesome 5 Free';
+        color: $secondary;
+        font-size: 15rem;
+        position: absolute;
+        opacity: 0.18;
+        top: 20px;
+        left: 20px;
+
+    }
+
+    &:after {
+        color: $primary;
+        top: -2rem;
+        left: -3rem;
+        transform: rotateY(180deg);
+    }
+
+}
+
+.faq-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 2rem;
+    color: $primary-dark;
+}
+
+.faq-text {
+    display: none;
+    font-size: 1.6rem;
+    margin: 3rem 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    color: $primary-dark;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+   padding: 0;
+   position: absolute;
+   top: 3rem;
+   right: 3rem;
+    width: 2.8rem;
+    height: 3rem;
+    border-radius: 50%;
+    &:focus {
+        outline: none;
+    }
+    
+}
+
+.times  {
+    display: none;
+}
+
+
+.faq.active .times{
+    display: block;
+}
+.faq.active .chevron{
+    display: none;
+}
+
+
+.faq.active {
+    .faq-toggle {
+        background-color: $danger;
+        color: $white;
+    }
+}
+
+
+// MEDIA QUERY
+@media screen and (max-width: 768px) {
+    .faq-container{
+        padding: 0 2rem;
+    }
+    .faq-title {
+        font-size: 1.7rem;
+        font-weight: bolder;
+        margin-bottom: 0.3rem;
+        position: relative;
+        padding-left: 0rem;
+        text-align: left;
+        width: 100%;
+        
+   
+    }
+    
+    .faq-text {
+        display: none;
+        font-size: 1.2rem;
+        margin: 3rem 0 0;
+    }
+
+.faq-toggle{
+    top: 0.8rem;
+    right: 1rem;
+}
+    
+   
+}

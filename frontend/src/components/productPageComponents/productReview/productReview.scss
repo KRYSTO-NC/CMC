@@ -1,0 +1,52 @@
+/* productReview.css */
+
+.product-review-section {
+    margin: 20px 0;
+    padding: 20px;
+
+
+
+  }
+  
+  .product-review-section h4 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .reviews-container {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .review-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .review-card strong {
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  
+  .review-card p {
+    margin: 10px 0;
+  }
+  
+  /* Loader styles (assuming Loader component has its own styles) */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  /* Add more styles as needed for your specific design preferences */
+  

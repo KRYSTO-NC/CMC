@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in RGBA */
+/* CSS */
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.favorite-card {
+  width: 32rem;
+  position: relative;
+  box-shadow: 0 2px 7px #b9b9b9;
+  margin: 1rem 2rem;
+  height: 50rem;
+  border-radius: 30px;
+}
+.favorite-card .favorite-card-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.favorite-card .favorite-card-actions .btn-card {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  margin: 0 auto;
+}
+.favorite-card .favorite-card-actions .btn-card:hover {
+  scale: 1.1;
+  color: white;
+}
+
+.red {
+  color: white;
+  background-color: #bf3636;
+}
+
+.orange {
+  color: white;
+  background-color: #bf8436;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.favorite-card-info {
+  padding: 1rem;
+}
+.favorite-card-info h3 {
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ajoutez cette ligne pour les trois petits points */
+  white-space: nowrap; /* Ajoutez cette ligne pour empêcher le texte de se replier à la ligne */
+  color: #005C53;
+  margin-bottom: 0.4rem;
+}
+.favorite-card-info p {
+  font-size: 1.8rem;
+  position: relative;
+  margin-top: 2rem;
+  text-align: center;
+}
+.favorite-card-info p span {
+  font-weight: bold;
+  margin-left: 1rem;
+  position: absolute;
+  top: -1rem;
+  color: rgb(148, 148, 148);
+}
+
+.favorite-card-thumbs {
+  height: 65%;
+  width: 100%;
+  border-radius: 5px;
+}
+.favorite-card-thumbs img {
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.favorite-card-actions {
+  margin-top: 3rem;
+}/*# sourceMappingURL=favoriteCard.css.map */

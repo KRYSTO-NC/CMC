@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in RGBA */
+/* CSS */
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.mini-product-card {
+  width: 30rem;
+  position: relative;
+  box-shadow: 0 2px 7px #b9b9b9;
+  margin: 1rem 2rem;
+  height: 38rem;
+  border-radius: 30px;
+}
+.mini-product-card .actions {
+  border-radius: 5px 0 0 0;
+}
+.mini-product-card .actions a {
+  color: #bf8436;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.mini-product-card .actions a:hover {
+  scale: 1.2;
+}
+.mini-product-card .actions button {
+  color: #bf3636;
+  font-size: 1.8rem;
+}
+.mini-product-card .actions button:hover {
+  scale: 1.2;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #005C53;
+  color: #F2F2F2;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 5px 0 0 0;
+  z-index: 150;
+}
+
+.mini-product-thumb {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  align-items: center;
+  height: 25rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+.mini-product-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.mini-product-thumb img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.product-details {
+  padding: 1rem;
+  overflow: hidden;
+  max-height: 20rem;
+}
+.product-details h4 a {
+  color: #005C53;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ajoutez cette ligne pour les trois petits points */
+  white-space: nowrap; /* Ajoutez cette ligne pour empêcher le texte de se replier à la ligne */
+}
+.product-details h4 a:hover {
+  color: #DBF227;
+}
+
+.mini-out-of-stock {
+  position: absolute;
+  background-color: #bf3636;
+  padding: 0.6rem 1rem;
+  z-index: 100;
+  color: white;
+}/*# sourceMappingURL=miniProductCard.css.map */

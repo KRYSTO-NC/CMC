@@ -1,12 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useGetUserDetailsQuery } from '../../../slices/userApiSlice';
+
 import Message from '../../../components/shared/message/Message';
 import Loader from '../../../components/shared/loader/Loader';
+import { useGetUserDetailsQuery } from '../../../slices/userApiSlice';
 
 const ProfilScreen = () => {
   const { userInfo } = useSelector((state) => state.auth);
+
+
+  
   const { data: profil, isLoading, error } = useGetUserDetailsQuery(userInfo._id);
+  
 
 console.log('====================================');
 console.log('profil', profil);
@@ -20,6 +25,7 @@ console.log('====================================');
       ) : (
         <>
           {error || !profil ? (
+      
             <Message messageTitle={"Oups !"} messageTxt={"Une erreur s'est produite lors du chargement du profil."}/>
           ) : (
             <>

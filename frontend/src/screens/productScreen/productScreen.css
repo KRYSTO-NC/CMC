@@ -36,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -61,24 +60,55 @@ button {
 }
 .product-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: #3671BF;
   height: 30rem;
 }
-.product-header .info-product {
+.product-header .header-info {
+  height: 30rem;
+  padding: 3rem 0;
+  width: 50%;
+}
+
+.actions {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
 }
-.product-header .info-product h1 {
-  font-size: 3rem;
-  font-weight: 100;
+.actions button {
+  margin: 2rem;
 }
-.product-header .info-product p {
-  font-size: 1.5rem;
-  font-weight: 100;
+
+.options {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.options th, .options td {
+  border: 1px solid #424242;
+  padding: 8px;
+  text-align: left;
+}
+
+.options th {
+  background-color: #808080;
+}
+
+.container-tab {
+  padding: 0 10rem;
+}
+
+.colored {
+  background-color: #e6e6e6;
+}
+
+.review-container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-container section h2 {
+  margin: 2rem;
 }/*# sourceMappingURL=productScreen.css.map */

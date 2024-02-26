@@ -6,12 +6,7 @@ const products = [
     countInStock: 5,
     description:
       'Naviguez avec style et confort grâce au bateau de pêche tout soudé de 13 pieds de Haiyu.',
-    images: [
-      '/images/bateau_alu.jpg',
-      '/images/bateau-alu-2.jpg',
-      '/images/bateau-alu-3.jpg',
-      '/images/bateau-alu-4.jpg',
-    ],
+    images: [],
     numMail: '36',
     price: 25000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -40,13 +35,7 @@ const products = [
     countInStock: 5,
     description:
       'Offrez-vous une expérience de divertissement exceptionnelle avec le téléviseur LED 50V6 de Sonzi',
-    images: [
-      '/images/sonzi_tv.jpg',
-      '/images/tv-s.jpg',
-      '/images/tv-s-2.jpg',
-      '/images/tv-s-3.jpg',
-      '/images/tv-s-4.jpg',
-    ],
+    images: [],
     name: 'Smart TV LED Android de 50 pouces ',
     numMail: '50',
     price: 55000,
@@ -76,7 +65,7 @@ const products = [
     countInStock: 5,
     description:
       'Découvrez le Samsung Galaxy Flip, un téléphone pliable révolutionnaire qui allie style et fonctionnalités avancées. Ce modèle, répertorié sous les numéros F711 et Z Flip, offre une expérience mobile unique. processeur Dual core, Système Android 11',
-    images: ['/images/zflip.jpg'],
+    images: [],
     name: 'Smart phone reconditionné, Galaxy Z Flip',
     numMail: '53',
     price: 10000,
@@ -90,7 +79,7 @@ const products = [
     countInStock: 5,
     description:
       'Phares, Feux arrière, Pare-chocs, Grille, Lampes antibrouillard, Rétroviseur, Porte, et plus encore pour Isuzu D-Max 2019',
-    images: ['/images/dmx_kit.jpg'],
+    images: [],
     name: 'Accessoires DMAX 2019 ',
     numMail: '71',
     price: 5000,
@@ -106,7 +95,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez la transmission 4WD DMAX 3.0 4JH1-TC de haute qualité pour ISUZU D-MAX. Cette assembly manuelle 4X4 à 5 vitesses offre une performance fiable pour votre DMAX équipé d'un moteur diesel 4 cylindres. Fabriquée en aluminium, cette transmission assure une réduction de vitesse optimale. La qualité est notre priorité, avec chaque unité professionnellement testée à 100%. Profitez d'une tranquillité d'esprit avec une garantie de 12 mois. Livrée dans un emballage en bois pour assurer une protection maximale. Upgradez votre expérience de conduite avec la transmission R&E DMAX 3.0 4JH1-TC.",
-    images: ['/images/bt-transimsion.jpg'],
+    images: [],
     numMail: '72',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -120,7 +109,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez l'ensemble générateur d'alternateur. Marqué par la fiabilité de la marque PASOU, cet ensemble est conçu pour les moteurs diesel ISUZU 4JB1 équipant les véhicules ISUZU NKR55 et JMC 1030. Bénéficiez d'une tranquillité d'esprit avec une garantie de 6 mois. Le numéro OEM 1200-1611177-31 garantit la compatibilité avec votre véhicule. Fabriqué en métal, cet ensemble est robuste et fiable.",
-    images: ['/images/alter-dmax.jpg'],
+    images: [],
     numMail: '73',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -135,7 +124,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez notre gamme de pièces détachées automobiles pour Isuzu, conçues avec des matériaux originaux pour assurer une qualité optimale. Ces accessoires automobiles sont spécialement conçus pour les véhicules Isuzu, offrant une compatibilité parfaite. Chaque pièce est soumise à un test professionnel à 100%, garantissant une performance fiable. Bénéficiez d'une tranquillité d'esprit avec une garantie de 12 mois sur toutes les pièces.",
-    images: ['/images/re-dmax.jpg'],
+    images: [],
     numMail: '74',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -150,7 +139,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez le turbo core Rhv4 pour DMAX 3.0 avec turbocompresseur, une pièce de qualité exceptionnelle proposée par AFAN. Conçu pour le moteur 4jj1 des véhicules Isuzu, ce turbo core est conforme aux normes OE. Bénéficiez d'une garantie étendue de 18 mois, démontrant notre confiance dans la durabilité de notre produit. Fabriqué en K418, ce turbo core est rigoureusement testé à 100% pour assurer une performance optimale. La certification ISO9000 garantit la qualité supérieure de notre produit. Choisissez AFAN pour une expérience de conduite améliorée avec notre turbo core Rhv4.",
-    images: ['/images/dmax-turbo.jpg'],
+    images: [],
     numMail: '75',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -164,7 +153,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez notre gamme de pièces automobiles ISUZU DMAX MUX. Ces pièces originales sont spécialement conçues pour le modèle ISUZU D-Max, assurant une compatibilité parfaite. Nous garantissons une qualité exceptionnelle, répondant aux normes les plus élevées de l'industrie automobile. Optez pour des pièces d'origine pour assurer la performance et la durabilité de votre ISUZU DMAX",
-    images: ['/images/dmax-acces.jpg'],
+    images: [],
     numMail: '76',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -178,7 +167,7 @@ const products = [
     countInStock: 0,
     description:
       "Découvrez la mini-chargeuse sur roues LW180K de 1,8 tonnes. Équipée d'un moteur Cummings, cette chargeuse offre une capacité de charge nominale de 1,8 tonne et fonctionne avec une transmission hydraulique. Certifiée CE, elle allie efficacité, esthétique soignée, et fiabilité pour répondre aux exigences des travaux de génie civil à petite échelle. La conception moderne de la LW180K intègre des technologies avancées mondiales, en faisant un produit de nouvelle génération dans le domaine des engins de chantier compacts. Optez pour la performance, la sécurité et la fiabilité avec la LW180K.",
-    images: '/images/mp.jpg',
+    images: [],
     numMail: '77',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -193,7 +182,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez le tout nouveau bateau en fibre de verre de 27 pieds de Kinocean, spécialement conçu pour les passionnés de yachting sportif. Fabriqué avec une fibre de verre de qualité supérieure, ce yacht sportif est équipé d'un puissant moteur hors-bord, assurant une expérience maritime exceptionnelle. Sa coque en V offre une stabilité remarquable et une manœuvrabilité optimale, répondant parfaitement aux attentes des amateurs de sports nautiques.",
-    images: ['/images/bateau-v.jpg'],
+    images: [],
     numMail: '78',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -207,7 +196,7 @@ const products = [
     countInStock: 5,
     description:
       "Ce moteur hors-bord marin essence 40HP à 2 temps offre différentes options de démarrage, avec le choix entre le démarrage de recul, le démarrage électrique et la commande à distance. Le modèle à long arbre présente une hauteur de tableau arrière de 533 mm (21,8 pouces), tandis que le modèle à arbre court a une hauteur de tableau arrière de 406 mm (16,8 pouces). Les dimensions d'emballage varient, avec 1490850600 mm et un poids de 120 kg pour le modèle à long arbre, et 1380850600 mm et un poids de 118 kg pour le modèle à arbre court. Choisissez la configuration qui correspond le mieux à vos besoins pour une expérience de navigation optimale.",
-    images: ['/images/hor_bord.jpg'],
+    images: [],
     numMail: '111',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -221,7 +210,7 @@ const products = [
     countInStock: 5,
     description:
       "Découvrez l'expertise de PaceWing avec notre gamme professionnelle de chaussures de course au design innovant. Fabriquées avec les dernières technologies de fabrication de chaussures de fitness, ces chaussures de course offrent un équilibre parfait entre style et fonctionnalité. Conçues spécialement pour les hommes passionnés de sport, elles incarnent la fusion entre un design élégant et des performances de pointe.",
-    images: ['/images/cc_fitness.jpg'],
+    images: [],
     numMail: '134',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -235,7 +224,7 @@ const products = [
     countInStock: 5,
     description:
       "Explorez notre sélection de voitures d'occasion Volkswagen GTI répondant aux normes Euro IV en matière d'émissions. Avec une capacité moteur de 4.1 à 6 litres, ces véhicules offrent un équilibre optimal entre puissance et efficacité. La plage de kilométrage varie de 1 à 25 000 miles, assurant des options adaptées à différents besoins. Profitez d'une performance maximale avec une puissance comprise entre 250 et 300 chevaux, associée à une transmission automatique pour une conduite fluide et agréable. Optez pour l'excellence avec nos Volkswagen GTI d'occasion, alliant performance et respect des normes environnementales.",
-    images: ['/images/wolw.jpg'],
+    images: [],
     numMail: '140',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -249,7 +238,7 @@ const products = [
     countInStock: 5,
     description:
       'Découvrez nos pneus solides de marque renommée. Avec un design radial et une largeur supérieure à 255 mm, ces pneus solides de qualité offrent une performance exceptionnelle. Disponibles dans différentes tailles, dont 315/80R22.5, 295/80R22.5, et 1200R24, ces pneus répondent aux normes les plus élevées en matière de qualité et de durabilité. Choisissez la fiabilité des grandes marques pour une expérience de conduite optimale.',
-    images: ['/images/pneu-rad.jpg'],
+    images: [],
     numMail: '142',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
@@ -263,7 +252,7 @@ const products = [
     countInStock: 5,
     description:
       "Explorez notre nouvelle excavatrice sur chenilles de 3,5 tonnes de la marque LEITE, offrant des caractéristiques exceptionnelles pour répondre à vos besoins spécifiques. Propulsée par un moteur Kubota puissant avec une puissance de 19,6 kW/rpm, cette excavatrice offre des performances fiables. Avec une capacité de godet de 0,09 m3 et un poids opérationnel de 3,5 tonnes, elle est idéale pour une variété d'industries, y compris les magasins de matériaux de construction, les ateliers de réparation de machines, les usines de fabrication, les exploitations agricoles, les travaux de construction, et plus encore.",
-    images: ['/images/epa.jpg'],
+    images: [],
     numMail: '143',
     price: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',

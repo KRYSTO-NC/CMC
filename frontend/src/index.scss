@@ -15,9 +15,27 @@
   flex-direction: column;
   margin: auto;
   max-width: 1440px;
+ 
   align-items: center;
 }
 
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.spanPrice {
+  color: $primary;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
 // ======================================= FORM =======================================
 .form {
   width: 70%;
@@ -70,6 +88,40 @@
   }
 }
 
+.image-input{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+    position: relative;
+ 
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+  
+  margin: 2rem;
+  img {
+   height: 10rem;
+   width: 10rem;
+  }
+  button{
+    position: absolute;
+    left: 0;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   color: red;
+   padding: 0.2rem;
+   height: auto;
+   &:hover{
+    background-color: white;
+     color: red;
+     scale: 1.1;
+  }
+  }
+}
+
 // ======================================= LINK =======================================
 
 a {
@@ -99,6 +151,16 @@ a {
     color: white;
   }
 }
+.btn-outline {
+  @include button;
+  border: 3px solid $secondary;
+  color: $secondary;
+  width: auto;
+  &:hover,
+  &:focus {
+   scale:  0.98
+  }
+}
 
 .btn-sm {
   @include button;
@@ -118,6 +180,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  h1{
+    margin-bottom: 1rem;
+  }
 
   p {
     color: $primary;
@@ -126,11 +191,89 @@ a {
 }
 @include bigPhone-and-lower {
   .heading {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
+ 
     p {
       font-size: 1.5rem;
       text-align: center;
     }
+  }
+}
+
+
+.rating{
+  color: rgb(216, 203, 29);
+}
+
+
+
+.categoryContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  a{
+    margin: 1rem;
+    width: 25rem;
+    height: 6rem;
+  }
+}
+
+
+
+.red-info {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+
+// tableau 
+
+table{
+  width: 100%;
+  margin: 5rem 0;
+
+  th{
+    background-color: $primary;
+    color: $secondary;
+  }
+  th{
+    border: 1px solid $primary;
+  }
+  td{
+
+    padding: 1rem;
+    background-color: rgb(197, 197, 216);
+  }
+}
+
+
+.card-like{
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  width: 32rem;
+  height: 14rem;
+  margin: 1rem ;
+  border: 2px solid $primary;
+  h4{
+    color: $primary;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ajoutez cette ligne pour les trois petits points */
+    white-space: nowrap; /* Ajoutez cette ligne pour empêcher le texte de se replier à la ligne */
+  }
+  div {
+    margin: 1rem 0;
+  span{
+    color: $secondary-dark;
+   
+  }
   }
 }

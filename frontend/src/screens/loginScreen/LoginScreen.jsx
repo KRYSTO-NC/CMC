@@ -38,7 +38,7 @@ const LoginScreen = () => {
     }
   }
   return (
-    <>
+    <div className='page-container'>
       <section className="heading">
         <h1>
           {' '}
@@ -68,7 +68,7 @@ const LoginScreen = () => {
         </form>
 
       </section>
-    </>
+    </div>
   )
 }
 

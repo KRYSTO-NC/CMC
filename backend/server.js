@@ -14,6 +14,7 @@ import uploadRoutes from './routes/uploadRoutes.js'
 import categoryRoutes from './routes/categoryRoutes.js'
 import subCategoryRoutes from './routes/subCategoryRoutes.js'
 import messageRoutes from './routes/messageRouter.js'
+import favoriteProductsRoutes from './routes/favoriteProductRoutes.js'
 
 const port = process.env.PORT || 5000
 
@@ -39,6 +40,7 @@ app.use('/api/upload', uploadRoutes)
 app.use('/api/categories', categoryRoutes)
 app.use('/api/sub-categories', subCategoryRoutes)
 app.use('/api/messages', messageRoutes)
+app.use('/api/favorite-products', favoriteProductsRoutes)
 
 app.get('/api/config/paypal', (req, res) =>
   res.send({ clientId: process.env.PAYPAL_CLIENT_ID }),

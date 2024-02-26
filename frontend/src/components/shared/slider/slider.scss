@@ -4,42 +4,17 @@
 @import '../../../SASS/animations';
 
 
-.slider {
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 80rem;
-
-
-    margin: 0 auto;
-    position: relative;
-
-    .slide {
-margin-top: 10rem;
-        height: 80rem;
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-}
 
 .slider {
 
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 40rem;
 
-
+     width: 100%;
     margin: 0 auto;
     position: relative;
 
@@ -51,7 +26,7 @@ margin-top: 10rem;
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }

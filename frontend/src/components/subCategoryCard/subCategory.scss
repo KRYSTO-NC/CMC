@@ -1,0 +1,14 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+
+.subCategoryCard{
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: $radius;
+    width: 200px;
+    box-shadow: $shadow;
+    p{
+        color: black
+    }
+}

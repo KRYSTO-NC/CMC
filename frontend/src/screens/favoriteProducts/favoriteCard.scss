@@ -1,0 +1,92 @@
+@import '../../SASS/reset.scss';
+@import '../../SASS/variables.scss';
+@import '../../SASS/mixins.scss';
+@import '../../SASS/animations.scss';
+
+
+.favorite-card{
+    width: 32rem;
+    position: relative;
+    box-shadow: 0 2px 7px #b9b9b9;
+    margin: 1rem 2rem;
+    height: 50rem;
+    border-radius: 30px;
+    .favorite-card-actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+      .btn-card {
+       
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        
+padding: 1rem;
+border-radius: $radius;
+display: flex;
+margin: 0 auto;
+
+&:hover {
+    scale: 1.1;
+    color: white;
+}
+      
+        }
+    }
+}
+
+.red {
+    color: white;
+    background-color: $danger;
+}
+
+.orange{
+    color: white;
+    background-color: $warning;
+    text-decoration: none;
+    font-size: 2rem;
+    
+
+}
+
+.favorite-card-info{
+    padding: 1rem;
+    h3 {
+        overflow: hidden;
+        text-overflow: ellipsis; /* Ajoutez cette ligne pour les trois petits points */
+        white-space: nowrap; /* Ajoutez cette ligne pour empêcher le texte de se replier à la ligne */
+      color: $primary;
+      margin-bottom: 0.4rem;
+    }
+ p{
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 2rem;
+    text-align: center;
+    span {
+        font-weight: bold;
+        margin-left: 1rem;
+        position: absolute;
+        top: -1rem;
+        color: rgb(148, 148, 148);
+       
+    }
+ }
+}
+
+.favorite-card-thumbs{
+    height: 65%;
+    width: 100%;
+    border-radius: $radius;
+    img{
+        height: 100%;
+        border-radius: $radius $radius 0 0 ;
+        width: 100%;
+        object-fit: cover;
+     }
+
+}
+
+.favorite-card-actions{
+    margin-top: 3rem;
+}

@@ -1,6 +1,4 @@
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -45,7 +43,7 @@
 }
 .footer-col h4 {
   font-size: 1.3rem;
-  color: #3671BF;
+  color: #005C53;
   text-transform: uppercase;
   margin-bottom: 3rem;
   position: relative;
@@ -55,7 +53,7 @@
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #3671BF;
+  background-color: #005C53;
   height: 2px;
   width: 50px;
   box-sizing: border-box;
@@ -73,7 +71,7 @@
   display: block;
 }
 .footer-col li a:hover {
-  color: #A9D943;
+  color: #DBF227;
   padding-left: 1rem;
 }
 
@@ -92,7 +90,7 @@
   font-size: 2rem;
 }
 .social-links a:hover {
-  background-color: #A9D943;
+  background-color: #DBF227;
   transition: all 0.5s ease-in-out;
 }
 

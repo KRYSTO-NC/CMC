@@ -14,7 +14,7 @@ const RegisterScreen = () => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [isProfessional, setIsProfessional] = useState(false) // Ajout de l'état pour le statut professionnel
- // Ajout de l'état pour le statut business
+  // Ajout de l'état pour le statut business
   const [billingAddress, setBillingAddress] = useState('') // Ajout de l'état pour l'adresse de facturation
   const [ridet, setRidet] = useState('') // Ajout de l'état pour le champ ridet
 
@@ -36,9 +36,13 @@ const RegisterScreen = () => {
     e.preventDefault()
 
     if (password !== confirmPassword) {
-      <Message messageTitle={"Oups une Erreur !"} messageTxt={"Les mots de passe ne correspondent pas, merci de réessayer !!"}/>
+      ;<Message
+        messageTitle={'Oups une Erreur !'}
+        messageTxt={
+          'Les mots de passe ne correspondent pas, merci de réessayer !!'
+        }
+      />
 
-     
       toast.error('Les mots de passe ne coresspoipnde pas !')
     } else {
       try {
@@ -61,7 +65,9 @@ const RegisterScreen = () => {
       <section className="form">
         <form onSubmit={submitHandler}>
           <div className="form-group">
-            <label htmlFor="name">Nom <span>*</span> </label>
+            <label htmlFor="name">
+              Nom <span>*</span>{' '}
+            </label>
             <input
               type="text"
               id="name"
@@ -72,7 +78,9 @@ const RegisterScreen = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email <span>*</span> </label>
+            <label htmlFor="email">
+              Email <span>*</span>{' '}
+            </label>
             <input
               type="email"
               id="email"
@@ -102,7 +110,6 @@ const RegisterScreen = () => {
                   placeholder="Entrer votre RIDET"
                   value={ridet}
                   onChange={(e) => setRidet(e.target.value)}
-                  
                 />
               </div>
               <div className="form-group">
@@ -113,7 +120,6 @@ const RegisterScreen = () => {
                   placeholder="Entrer votre adresse de facturation"
                   value={billingAddress}
                   onChange={(e) => setBillingAddress(e.target.value)}
-               
                 />
               </div>
             </>
@@ -121,7 +127,9 @@ const RegisterScreen = () => {
             ''
           )}
           <div className="form-group">
-            <label htmlFor="password">Mot de passe <span>*</span> </label>
+            <label htmlFor="password">
+              Mot de passe <span>*</span>{' '}
+            </label>
             <input
               type="password"
               id="password"
@@ -132,7 +140,9 @@ const RegisterScreen = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="confirmPassword">Confirmer le mot de passe <span>*</span> </label>
+            <label htmlFor="confirmPassword">
+              Confirmer le mot de passe <span>*</span>{' '}
+            </label>
             <input
               type="password"
               id="confirmPassword"
@@ -142,6 +152,26 @@ const RegisterScreen = () => {
               required
             />
           </div>
+          <div className="form-group">
+            <div className="checkbox">
+
+            <label htmlFor="">
+              J'accepte de revevoir des emails de la part de <br />
+              caledonie-moins-cher.com
+            </label>
+            <input type="checkbox" name="" id="" />
+            </div>
+          </div>
+          <div className="form-group">
+            <div className="checkbox">
+
+            <label htmlFor="">
+              J'ai lu et j'accepte les conditions générales d'utilisation <span>*</span>
+            </label>
+            <input type="checkbox" name="" id="" />
+            </div>
+          </div>
+      
           <div className="form-group">
             <button
               type="submit"

@@ -36,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -60,7 +59,7 @@ button {
   }
 }
 .overlay {
-  background-color: rgba(217, 217, 217, 0.5450980392);
+  background-color: rgba(37, 37, 37, 0.4078431373);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -69,6 +68,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal {
@@ -78,6 +78,7 @@ button {
   position: relative;
   margin-bottom: 3rem;
   min-width: 32rem;
+  animation: flip-in-hor-top 1.2s ease-out;
 }
 .modal h4 {
   color: black;
@@ -102,8 +103,7 @@ button {
 
 .btn-message {
   background-color: #bf3636;
-  width: 40%;
-  margin: 0 1rem;
+  width: 100%;
   border-radius: 10px;
   padding: 0.5rem;
   margin-top: 2rem;

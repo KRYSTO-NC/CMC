@@ -36,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -76,7 +75,7 @@ button {
   width: 108px;
   height: 108px;
   border: 5px solid #FFF;
-  border-bottom-color: #A9D943;
+  border-bottom-color: #DBF227;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;

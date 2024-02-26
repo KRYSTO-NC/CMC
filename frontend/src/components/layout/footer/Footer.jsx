@@ -31,8 +31,8 @@ const Footer = () => {
             <ul>
               <li><Link to={'/mentions-legales'}>Mentions légales</Link></li>
               <li><Link to={'/cgv'}>CGV</Link></li>
-              <li><a href="#!">CGU</a></li>
-              <li><a href="#!">Cookies</a></li>
+              <li><Link to={'/cgu'}>CGU</Link></li>
+   
 
             </ul>
           </div>

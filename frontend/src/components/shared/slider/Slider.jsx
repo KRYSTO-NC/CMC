@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import './slider.css';
 
-const Slider = ({ product}) => {
+const Slider = ({ product }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -10,8 +10,18 @@ const Slider = ({ product}) => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + product.images.length) % product.images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + product.images.length) % product.images.length
+    );
   };
+
+  // Auto scroll to the next slide every 3 seconds (adjust the interval as needed)
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 3000);
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [currentIndex, product.images.length]);
 
   return (
     <>
@@ -22,7 +32,6 @@ const Slider = ({ product}) => {
               key={index}
               className={index === currentIndex ? 'slide active' : 'slide'}
             >
- 
               <img src={image} alt={`Image ${index + 1}`} />
             </div>
           ))}

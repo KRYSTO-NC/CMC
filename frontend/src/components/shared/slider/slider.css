@@ -36,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* CSS */
 @keyframes flip-in-hor-top {
@@ -60,32 +59,11 @@ button {
   }
 }
 .slider {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80rem;
-  margin: 0 auto;
-  position: relative;
-}
-.slider .slide {
-  margin-top: 10rem;
-  height: 80rem;
-  width: 100%;
-}
-.slider .slide img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slider {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40rem;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -96,8 +74,8 @@ button {
 .slider .slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .navigation-button {

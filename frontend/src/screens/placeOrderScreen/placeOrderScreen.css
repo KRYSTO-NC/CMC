@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+  color: #434343;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Color Theme Swatches in RGBA */
+/* CSS */
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.shipping-section {
+  display: flex;
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.shipping-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005C53;
+}
+.shipping-section .payment-method-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #005C53;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  width: 30rem;
+}
+.shipping-section .payment-method-section p {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #005C53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #005C53;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.order-item img {
+  width: 15rem;
+  height: 15rem;
+}
+.order-item .item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.order-item .item-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005C53;
+}
+.order-item .item-details p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #042940;
+}
+.order-item .item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.order-item .item-price h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005C53;
+}
+.order-item .item-price p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #042940;
+}
+
+.order-summary {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 30rem;
+  padding: 3rem;
+  width: 68rem;
+  display: flex;
+  flex-direction: column;
+}
+.order-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.order-summary div h5 {
+  font-size: 2rem;
+  color: #005C53;
+}
+.order-summary div p {
+  font-size: 1.6rem;
+  color: #042940;
+}
+.order-summary div p span {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.total-price {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #DBF227;
+}/*# sourceMappingURL=placeOrderScreen.css.map */
