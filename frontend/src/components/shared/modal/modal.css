@@ -77,7 +77,7 @@ button {
   border-radius: 15px;
   position: relative;
   margin-bottom: 3rem;
-  min-width: 32rem;
+  width: 50rem;
   animation: flip-in-hor-top 1.2s ease-out;
 }
 .modal h4 {

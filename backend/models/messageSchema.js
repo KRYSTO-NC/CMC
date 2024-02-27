@@ -21,10 +21,21 @@ const messageSchema = new mongoose.Schema(
         'Vous devez renseigner une adresse email valide',
       ],
     },
+    isProfessional: {
+      type: Boolean,
+      default: false,
+    },
     content: {
       type: String,
       required: true,
     },
+    ridet: {
+      type: String,
+    },
+    phone: {
+      type: String,
+    },
+
     status: {
       type: String,
       default: 'A traiter',

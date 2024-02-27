@@ -41,6 +41,8 @@ import AdminUserEdit from './screens/admin/adminUserEdit/AdminUserEdit'
 import FavoriteProducts from './screens/favoriteProducts/FavoriteProducts'
 import AdminOrders from './screens/admin/adminOrders/AdminOrders'
 import AdminFavoriteProducts from './screens/admin/adminFavoriteProducts/AdminFavoriteProducts'
+import AdminMessages from './screens/admin/adminMessages/AdminMessages'
+import AdminMessage from './screens/admin/adminMessage/AdminMessage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -57,6 +59,7 @@ const router = createBrowserRouter(
       <Route path="/nos-produits" element={<ProductsScreen />} />
       <Route path="/search/:keyword" element={<ProductsScreen />} />
       <Route path="/page/:pageNumber" element={<ProductsScreen />} />
+
       <Route
         path="/search/:keyword/page/:pageNumber"
         element={<ProductsScreen />}
@@ -82,6 +85,8 @@ const router = createBrowserRouter(
         <Route path="/admin/users" element={<AdminUsersList />} />
         <Route path="/admin/user-edit/:id" element={<AdminUserEdit />} />
         <Route path="/admin/orders" element={<AdminOrders />} />
+        <Route path="/admin/messages" element={<AdminMessages />} />
+        <Route path="/admin/message/:id" element={<AdminMessage />} />
         <Route
           path="/admin/favorite-products"
           element={<AdminFavoriteProducts />}

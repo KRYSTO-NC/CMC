@@ -1,0 +1,46 @@
+.message-infos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.message-infos .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 32rem;
+  height: 30rem;
+}
+.message-infos h3 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+.message-infos p {
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: blue;
+}
+.message-infos p span {
+  color: black;
+}
+
+.message-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 30rem;
+  background-color: #fff;
+}/*# sourceMappingURL=adminMessage.css.map */

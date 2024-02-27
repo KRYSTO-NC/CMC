@@ -16,6 +16,7 @@ const DashboardScreen = () => {
         <Link to={'/admin/orders'}   className="btn btn-block">Gestion des commandes</Link>
         <Link to={'/admin/users'}   className="btn btn-block">Gestion des utilisateurs</Link>
         <Link to={'/admin/favorite-products'}   className="btn btn-block">Les produits ajoutée au favoris</Link>
+        <Link to={'/admin/messages'}   className="btn btn-block">Messages</Link>
       </div>
     </div>
   )

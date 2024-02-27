@@ -11,3 +11,26 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+
+.category-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    select {
+    
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      width: 32rem;
+  
+      background-color: white;
+      color: $primary;
+      font-size: 1.5rem;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+        border: 3px solid $primary;
+      }
+    }
+  }

@@ -9,7 +9,7 @@ import { useDeleteUsersMutation, useGetUsersQuery } from '../../../slices/userAp
 const AdminUsersList = () => {
 
     const { data: users, refetch, isLoading, error } = useGetUsersQuery();
-
+  console.log(users);
     const [deleteUser] = useDeleteUsersMutation();
   
     const deleteHandler = async (id) => {

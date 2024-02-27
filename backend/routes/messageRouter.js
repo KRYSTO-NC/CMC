@@ -10,7 +10,7 @@ import {
 import { protect, admin } from '../middleware/authMiddleware.js'
 import checkObjectId from '../middleware/checkObjectId.js'
 
-router.route('/').get(getMessages).post(protect, createMessage)
+router.route('/').get(getMessages).post(createMessage)
 
 router
   .route('/:id')

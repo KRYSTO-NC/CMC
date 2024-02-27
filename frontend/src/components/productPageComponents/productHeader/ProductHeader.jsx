@@ -2,22 +2,39 @@ import React, { useState } from 'react';
 import Rating from '../../Rating';
 import './productheaderCover.css';
 import Slider from '../../shared/slider/Slider';
+import Modal from '../../shared/modal/Modal';
 
 const ProductHeader = ({ product, addToCartHandler }) => {
   // State pour la quantité
   const [qty, setQty] = useState(1);
-
-  console.log('====================================');
-  console.log(product);
-  console.log('====================================');
 
   return (
     <div className='container-header-product'>
      
 
      <div className="actions">
-      <button className='btn'>Demander un devis</button>
-      <button className='btn'>Demander des renseignements</button>
+
+      <Modal modalBtn={'Demander une proformat'}  >
+        <form className="form">
+          <div className="form-group">
+            <label htmlFor="object">Objet de votre demande</label>
+            <input type="text" id="name" placeholder="Votre nom" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="object">Nombres d'articles</label>
+            <input type="number" id="name" placeholder="Nombres d'articles souhaiter" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="name">Votre demande</label>
+            <textarea type="text" id="name" placeholder="ecrivez votre demande ..." />
+          </div>
+    <div className="form-group">
+      <button type="submit" className="btn-block">Envoyer</button>
+    </div>
+        </form>
+      </Modal>
+    
+      <Modal modalBtn={'Obtenir des renseignements'} ></Modal>
    
      </div>
 

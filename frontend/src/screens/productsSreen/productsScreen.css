@@ -64,4 +64,24 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category-filter select {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 32rem;
+  background-color: white;
+  color: #005C53;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.category-filter select:focus {
+  outline: none;
+  border: 3px solid #005C53;
 }/*# sourceMappingURL=productsScreen.css.map */

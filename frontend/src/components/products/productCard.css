@@ -174,21 +174,15 @@ button {
 
 .out-of-stock {
   position: absolute;
-  top: 0;
+  top: 25rem;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-color: rgba(9, 9, 9, 0.752);
-  color: #bf3636;
-  font-weight: bolder;
-  font-size: 3rem;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  border-radius: 5px 0 0 0;
   text-align: center;
-  padding-top: 80%;
-  z-index: 1000;
-  border-radius: 20px;
+  background-color: #bf3636;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  text-transform: uppercase;
 }
 
 .product-price {
@@ -233,21 +227,6 @@ button {
 }
 .header-search .search-bar {
   width: 50%;
-}
-
-.category-filter select {
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  color: #005C53;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.category-filter select:focus {
-  outline: none;
-  border: 3px solid #005C53;
 }
 
 @media screen and (max-width: 40.5rem) {
