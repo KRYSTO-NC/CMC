@@ -6,10 +6,7 @@ const subCategorySchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    description: {
-      type: String,
-      required: true,
-    },
+
     category: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,

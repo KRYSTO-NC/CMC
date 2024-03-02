@@ -44,19 +44,19 @@ const ContactsBanner = () => {
         </div>
         <div className="contacts">
           <div className="btn-reverse">
-            <a href="mailto: caledonie-moins-cher.com">
+            <a href="mailto: caledoniemoinscher@gmail.com">
               <FaEnvelope/>
-              contact@caledonie-moin-cher.com
+              caledoniemoinscher@gmail.com
             </a>
           </div>
           <div className="btn-reverse">
             <FaPhone/>
-            <a href="tel: (+687)93.92.53">(+687) 93.92.53</a>
+            <a href="tel: (+687)71.99.27">(+687) 71.99.27</a>
           </div>
           <div className="contact phone">
             <Modal modalBtn={"Laissez nous un message"} >
               <h3>Nous envoyer un message</h3>
-              <p>Pour toute demande nous vous repondant enntre 24 et 48H</p>
+              <p>Pour toute demande nous vous repondant entre 24 et 48H</p>
           <div className="form">
           <form >
           <div className="form-group">

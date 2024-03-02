@@ -8,38 +8,36 @@ import { useGetUserDetailsQuery } from '../../../slices/userApiSlice';
 const ProfilScreen = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
-
-  
   const { data: profil, isLoading, error } = useGetUserDetailsQuery(userInfo._id);
-  
 
-console.log('====================================');
-console.log('profil', profil);
-console.log('====================================');
+
 
   return (
     <div>
-   
       {isLoading ? (
-        <Loader/>
+        <Loader />
       ) : (
         <>
           {error || !profil ? (
-      
-            <Message messageTitle={"Oups !"} messageTxt={"Une erreur s'est produite lors du chargement du profil."}/>
+            <Message
+              messageTitle={"Oups !"}
+              messageTxt={"Une erreur s'est produite lors du chargement du profil."}
+            />
           ) : (
             <>
-            <div className="page-container">
+              <div className="page-container">
                 <div className="heading">
-                    <h2>Profil</h2>
-                    <p>Informations personnelles</p>
+                  <h2> Bienvenue sur votre Profil {profil.name}</h2>
+                  <p>Vous pouvez depuis cette page modifier les informations vous concernant</p>
                 </div>
 
-              <h2>{profil.name}</h2>
-              <p>Email: {profil.email}</p>
-            </div>
-           
-              
+                
+
+                <h2>{profil.name}</h2>
+                <p>Email: {profil.email}</p>
+               
+              <button className='btn btn-block' style={{background:"red"}}>Supprimer mon compte</button>
+              </div>
             </>
           )}
         </>

@@ -114,12 +114,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       name: updatedUser.name,
       email: updatedUser.email,
       isAdmin: updatedUser.isAdmin,
-      isBusiness: updatedUser.isBusiness,
-      address: updatedUser.address,
-      phoneNumber: updatedUser.phoneNumber,
-      isProfessional: updatedUser.isProfessional,
-      billingAddress: updatedUser.billingAddress,
-      ridet: updatedUser.ridet,
     })
   } else {
     res.status(404)

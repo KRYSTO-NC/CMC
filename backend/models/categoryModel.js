@@ -6,10 +6,7 @@ const categorySchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    description: {
-      type: String,
-      required: true,
-    },
+
     // Ajoutez d'autres champs spécifiques à votre modèle de catégorie si nécessaire
   },
   {

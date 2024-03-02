@@ -13,10 +13,6 @@ const RegisterScreen = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
-  const [isProfessional, setIsProfessional] = useState(false) // Ajout de l'état pour le statut professionnel
-  // Ajout de l'état pour le statut business
-  const [billingAddress, setBillingAddress] = useState('') // Ajout de l'état pour l'adresse de facturation
-  const [ridet, setRidet] = useState('') // Ajout de l'état pour le champ ridet
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -36,7 +32,7 @@ const RegisterScreen = () => {
     e.preventDefault()
 
     if (password !== confirmPassword) {
-      ;<Message
+      <Message
         messageTitle={'Oups une Erreur !'}
         messageTxt={
           'Les mots de passe ne correspondent pas, merci de réessayer !!'
@@ -90,42 +86,7 @@ const RegisterScreen = () => {
               required
             />
           </div>
-          <div className="form-group checkbox">
-            <label htmlFor="isProfessional">Êtes-vous un professionnel ?</label>
-            <input
-              type="checkbox"
-              id="isProfessional"
-              checked={isProfessional}
-              onChange={() => setIsProfessional(!isProfessional)}
-            />
-          </div>
-
-          {isProfessional === true ? (
-            <>
-              <div className="form-group">
-                <label htmlFor="ridet">Ridet</label>
-                <input
-                  type="text"
-                  id="ridet"
-                  placeholder="Entrer votre RIDET"
-                  value={ridet}
-                  onChange={(e) => setRidet(e.target.value)}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="billingAddress">Adresse de facturation</label>
-                <input
-                  type="text"
-                  id="billingAddress"
-                  placeholder="Entrer votre adresse de facturation"
-                  value={billingAddress}
-                  onChange={(e) => setBillingAddress(e.target.value)}
-                />
-              </div>
-            </>
-          ) : (
-            ''
-          )}
+  
           <div className="form-group">
             <label htmlFor="password">
               Mot de passe <span>*</span>{' '}
@@ -152,25 +113,9 @@ const RegisterScreen = () => {
               required
             />
           </div>
-          <div className="form-group">
-            <div className="checkbox">
-
-            <label htmlFor="">
-              J'accepte de revevoir des emails de la part de <br />
-              caledonie-moins-cher.com
-            </label>
-            <input type="checkbox" name="" id="" />
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="checkbox">
-
-            <label htmlFor="">
-              J'ai lu et j'accepte les conditions générales d'utilisation <span>*</span>
-            </label>
-            <input type="checkbox" name="" id="" />
-            </div>
-          </div>
+  
+      
+      
       
           <div className="form-group">
             <button

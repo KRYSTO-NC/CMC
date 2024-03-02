@@ -9,6 +9,7 @@ const products = [
     images: [],
     numMail: '36',
     price: 25000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://french.alibaba.com/product-detail/subject-1600382944884.html?from=share&ckvia=share_e681851dc1ee47d3860398d30688d527',
@@ -39,6 +40,7 @@ const products = [
     name: 'Smart TV LED Android de 50 pouces ',
     numMail: '50',
     price: 55000,
+    fretPrice: 10200,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://sonzi-tv.en.made-in-china.com/product/vNcESgowkhVp/China-Slim-Frame-50-Inch-LED-TV-Android-System-Smart-TV-Frameless-WiFi-Digital-Television.html?utm_source=email&utm_medium=free&utm_campaign=showroom_share&utm_content=DMHn2E0a24B7UMQOKd9nb7cZhejJjyo9',
@@ -69,6 +71,7 @@ const products = [
     name: 'Smart phone reconditionné, Galaxy Z Flip',
     numMail: '53',
     price: 10000,
+    fretPrice: 10500,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://french.alibaba.com/product-detail/subject-1600982502563.html?from=share&ckvia=share_79acc411595741c78985afb0c1d88af7',
@@ -82,7 +85,11 @@ const products = [
     images: [],
     name: 'Accessoires DMAX 2019 ',
     numMail: '71',
-    price: 5000,
+    price: 0,
+    fretPrice: 1000,
+    priceRange: true,
+    priceRangeMin: 1000,
+    priceRangeMax: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600933278450.html?from=share&ckvia=share_6bcb087c674943f487cd39534e4f322b',
@@ -98,6 +105,7 @@ const products = [
     images: [],
     numMail: '72',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_62196149130.html?from=share&ckvia=share_1d1f17a0b8d44d849cceea3cb0a463cd',
@@ -112,6 +120,7 @@ const products = [
     images: [],
     numMail: '73',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600593955263.html?from=share&ckvia=share_2cd68773b3f14748b0a990f2cb9621cd',
@@ -123,10 +132,14 @@ const products = [
     category: '65cf60e4c6daa9f0968b7aac',
     countInStock: 5,
     description:
-      "Découvrez notre gamme de pièces détachées automobiles pour Isuzu, conçues avec des matériaux originaux pour assurer une qualité optimale. Ces accessoires automobiles sont spécialement conçus pour les véhicules Isuzu, offrant une compatibilité parfaite. Chaque pièce est soumise à un test professionnel à 100%, garantissant une performance fiable. Bénéficiez d'une tranquillité d'esprit avec une garantie de 12 mois sur toutes les pièces.",
+      "Découvrez notre gamme de pièces détachées automobiles pour Isuzu, conçues avec des matériaux originaux pour assurer une qualité optimale. @ Ces accessoires automobiles sont spécialement conçus pour les véhicules Isuzu, offrant une compatibilité parfaite. Chaque pièce est soumise à un test professionnel à 100%, garantissant une performance fiable. @ Bénéficiez d'une tranquillité d'esprit avec une garantie de 12 mois sur toutes les pièces.",
     images: [],
     numMail: '74',
-    price: 5000,
+    price: 0,
+    fretPrice: 1000,
+    priceRange: true,
+    priceRangeMin: 1000,
+    priceRangeMax: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600660890807.html?from=share&ckvia=share_6c5e5b477b514fd0b51a6d6ffd472309',
@@ -142,6 +155,7 @@ const products = [
     images: [],
     numMail: '75',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600637295343.html?from=share&ckvia=share_90d23a39b09f49d4af9994074818497c',
@@ -155,7 +169,11 @@ const products = [
       "Découvrez notre gamme de pièces automobiles ISUZU DMAX MUX. Ces pièces originales sont spécialement conçues pour le modèle ISUZU D-Max, assurant une compatibilité parfaite. Nous garantissons une qualité exceptionnelle, répondant aux normes les plus élevées de l'industrie automobile. Optez pour des pièces d'origine pour assurer la performance et la durabilité de votre ISUZU DMAX",
     images: [],
     numMail: '76',
-    price: 5000,
+    price: 0,
+    fretPrice: 1000,
+    priceRange: true,
+    priceRangeMin: 1000,
+    priceRangeMax: 5000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600698147933.html?from=share&ckvia=share_62fc101401f549b98f974dc80442a032',
@@ -166,10 +184,11 @@ const products = [
     category: '65cf60e4c6daa9f0968b7aac',
     countInStock: 0,
     description:
-      "Découvrez la mini-chargeuse sur roues LW180K de 1,8 tonnes. Équipée d'un moteur Cummings, cette chargeuse offre une capacité de charge nominale de 1,8 tonne et fonctionne avec une transmission hydraulique. Certifiée CE, elle allie efficacité, esthétique soignée, et fiabilité pour répondre aux exigences des travaux de génie civil à petite échelle. La conception moderne de la LW180K intègre des technologies avancées mondiales, en faisant un produit de nouvelle génération dans le domaine des engins de chantier compacts. Optez pour la performance, la sécurité et la fiabilité avec la LW180K.",
+      "Découvrez la mini-chargeuse sur roues LW180K de 1,8 tonnes. Équipée d'un moteur Cummings, cette chargeuse offre une capacité de charge nominale de 1,8 tonne et fonctionne avec une transmission hydraulique. Certifiée CE, elle allie efficacité, esthétique soignée, et fiabilité pour répondre aux exigences des travaux de génie civil à petite échelle. La conception moderne de la LW180K intègre des technologies avancées mondiales, en faisant un produit de nouvelle génération dans le domaine des engins de chantier compacts. @ Optez pour la performance, la sécurité et la fiabilité avec la LW180K.",
     images: [],
     numMail: '77',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://oriemac.en.made-in-china.com/product/ObWJYKaAHyRg/China-Mini-Wheel-Loader-Lw180K-1-8ton-Small-Loaders-in-Stock.html?utm_source=email&utm_medium=free&utm_campaign=showroom_share&utm_content=0',
@@ -199,6 +218,7 @@ const products = [
     images: [],
     numMail: '111',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://fr.aliexpress.com/item/1005005768302674.html?srcSns=sns_Gmail&spreadType=socialShare&bizType=ProductDetail&social_params=21390347004&aff_fcid=4fe259417ad2473ba76c4b0435b40d9a-1708032227805-05801-_mPveHbG&tt=MG&aff_fsk=_mPveHbG&aff_platform=default&sk=_mPveHbG&aff_trace_key=4fe259417ad2473ba76c4b0435b40d9a-1708032227805-05801-_mPveHbG&shareId=21390347004&businessType=ProductDetail&platform=AE&terminal_id=d85fc28e26b4416b85d9484728f4891b&afSmartRedirect=y',
@@ -213,6 +233,7 @@ const products = [
     images: [],
     numMail: '134',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600731515049.html?from=share&ckvia=share_3d3dc9af900042128d1e7b590dadf6a1',
@@ -227,6 +248,7 @@ const products = [
     images: [],
     numMail: '140',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600985243354.html?from=share&ckvia=share_f4bca6f425ad4b04a96a46edb6dbfbea',
@@ -241,6 +263,7 @@ const products = [
     images: [],
     numMail: '142',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600199567731.html?from=share&ckvia=share_b50f146422884d3ba9869bda6472826c',
@@ -251,10 +274,11 @@ const products = [
     category: '65cf60e4c6daa9f0968b7aac',
     countInStock: 5,
     description:
-      "Explorez notre nouvelle excavatrice sur chenilles de 3,5 tonnes de la marque LEITE, offrant des caractéristiques exceptionnelles pour répondre à vos besoins spécifiques. Propulsée par un moteur Kubota puissant avec une puissance de 19,6 kW/rpm, cette excavatrice offre des performances fiables. Avec une capacité de godet de 0,09 m3 et un poids opérationnel de 3,5 tonnes, elle est idéale pour une variété d'industries, y compris les magasins de matériaux de construction, les ateliers de réparation de machines, les usines de fabrication, les exploitations agricoles, les travaux de construction, et plus encore.",
+      "Explorez notre nouvelle excavatrice sur chenilles de 3,5 tonnes de la marque LEITE, offrant des caractéristiques exceptionnelles pour répondre à vos besoins spécifiques. @ Propulsée par un moteur Kubota puissant avec une puissance de 19,6 kW/rpm, cette excavatrice offre des performances fiables. Avec une capacité de godet de 0,09 m3 et un poids opérationnel de 3,5 tonnes, elle est idéale pour une variété d'industries, y compris les magasins de matériaux de construction, les ateliers de réparation de machines, les usines de fabrication, les exploitations agricoles, les travaux de construction, et plus encore.",
     images: [],
     numMail: '143',
     price: 5000,
+    fretPrice: 1000,
     subCategory: '65cf60efc6daa9f0968b7ab2',
     url:
       'https://www.alibaba.com/product-detail/subject_1600235976320.html?from=share&ckvia=share_d07285d896bf46de8b0cd61a921ba874',

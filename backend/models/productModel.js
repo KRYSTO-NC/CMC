@@ -79,6 +79,25 @@ const productSchema = new mongoose.Schema(
       default: 0,
       required: true,
     },
+
+    priceRange: {
+      type: Boolean,
+      default: false,
+    },
+    priceRangeMin: {
+      type: Number,
+      default: 0,
+    },
+    priceRangeMax: {
+      type: Number,
+      default: 0,
+    },
+
+    fretPrice: {
+      type: Number,
+      default: 0,
+      required: true,
+    },
     countInStock: {
       type: Number,
       required: true,
